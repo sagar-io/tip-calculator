@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+
+#calc-container{
+    max-width: 600px;
+    margin: auto;
+    width: 80%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+#input-screen{
+    color: hsl(186, 14%, 43%);
+}
+#input-screen input{
+    background-color:  hsl(189, 41%, 97%);
+    border: none;
+    width: 100%;
+    padding: 7px;
+    font-size: 24px;
+}
+
+
+#tip-container{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tip-btn{
+    background-color:  hsl(183, 100%, 15%);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 3px;
+}
+.custom-btn{
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    color: gray;
+}
+
+/* Output Screen */
+#output-screen{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 6px;
+    padding: 1rem;
+    position: relative;
+}
+.output-tip, .output-total{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    color: hsl(189, 41%, 97%);
+}
+
+.output-tip .output-number, .output-total .output-number{
+    color: hsl(172, 67%, 45%);
+    font-size: 2.4rem;
+}
+
+.gray-txt{
+    color: hsl(184, 14%, 56%);
+}
+
+.reset-btn{
+    background-color: hsl(172, 67%, 45%);
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    border: none;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 10px;
+    margin:0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media(max-width: 375px) {
+    body{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* only for testing */
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7{
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    /* bottom: 60px; */
+}
+
+.color1{
+    background-color: hsl(172, 67%, 45%);
+    bottom: 80px;
+}
+.color2{
+    background-color:  hsl(183, 100%, 15%);
+    bottom: 70px;
+}
+.color3{
+    background-color:   hsl(186, 14%, 43%);
+    bottom: 60px;
+}
+.color4{
+    background-color:  hsl(184, 14%, 56%);
+    bottom: 50px;
+}
+.color5{
+    background-color:  hsl(185, 41%, 84%);
+    bottom: 40px;
+}
+.color6{
+    background-color:  hsl(189, 41%, 97%);
+    bottom: 30px;
+}
+.color7{
+    background-color:  hsl(0, 0%, 100%);
+    bottom: 20px;
+}
