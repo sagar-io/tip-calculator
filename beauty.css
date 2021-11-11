@@ -20,6 +20,7 @@ body{
     grid-template-columns:1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem;
+    overflow: auto;
 }
 
 #input-screen{
@@ -93,13 +94,18 @@ body{
 }
 
 
-
-
-
-
 @media(max-width: 375px) {
-    body{
-        display: none;
+    #calc-container{
+        grid-template-columns: 1fr;
+    }
+    #tip-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .reset-btn{
+        display: block;
+        position: static;
+        transform: translate(0%, 0%);
+        margin: auto;
     }
 }
 
@@ -139,14 +145,12 @@ body{
 
 
 
-
 /* only for testing */
-
+/* 
 .color1, .color2, .color3, .color4, .color5, .color6, .color7{
     height: 10px;
     width: 100%;
     position: fixed;
-    /* bottom: 60px; */
 }
 
 .color1{
@@ -176,4 +180,4 @@ body{
 .color7{
     background-color:  hsl(0, 0%, 100%);
     bottom: 20px;
-}
+} */ 
