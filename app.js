@@ -44,4 +44,5 @@ function handleOutput() {
 resetButton.addEventListener('click', () =>{
     outputNumberTip.innerText = '0.00';
     outputNumberTotal.innerText = '0.00';
+    
 })

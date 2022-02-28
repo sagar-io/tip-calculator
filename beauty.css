@@ -20,7 +20,7 @@ body{
     grid-template-columns:1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem;
-    overflow: auto;
+    /* overflow: ; */
 }
 
 #input-screen{
@@ -61,6 +61,7 @@ body{
     border-radius: 6px;
     padding: 1rem;
     position: relative;
+    overflow: auto;
 }
 .output-tip, .output-total{
     padding: 8px;
@@ -72,8 +73,15 @@ body{
 .output-tip .output-number, .output-total .output-number{
     color: hsl(172, 67%, 45%);
     font-size: 2.4rem;
-}
+    /* overflow: scroll; */
 
+}
+#output-number-tip, #output-number-total{
+    /* overflow: hidden; */
+}
+.output-tip, .output-total{
+    /* overflow: hidden; */
+}
 .gray-txt{
     color: hsl(184, 14%, 56%);
 }
